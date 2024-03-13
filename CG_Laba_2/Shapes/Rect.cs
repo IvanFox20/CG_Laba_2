@@ -5,19 +5,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CG_Laba_2
+namespace CG_Laba_2.Shapes
 {
-    internal class Circle : Shape
+    internal class Rect : Shape
     {
-        public Circle(float x, float y)
+        public Rect(float x, float y)
         {
             _startPoints.Add(new List<float> { x, y, 1F });
             _currentPoints = new List<List<float>>(_startPoints.Select(sublist => new List<float>(sublist)));
         }
-
         public void Draw(Graphics g)
         {
-            g.FillEllipse(new SolidBrush(Color.Red) , _currentPoints[0][0], _currentPoints[0][1],30,30);
+            g.FillRectangle(new SolidBrush(Color.Black), _currentPoints[0][0], _currentPoints[0][1], 30, 120);
         }
 
         public float GetX()

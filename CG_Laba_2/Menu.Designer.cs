@@ -35,9 +35,10 @@
             // 
             // transformationsButton
             // 
-            this.transformationsButton.Location = new System.Drawing.Point(172, 202);
+            this.transformationsButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.transformationsButton.Location = new System.Drawing.Point(119, 176);
             this.transformationsButton.Name = "transformationsButton";
-            this.transformationsButton.Size = new System.Drawing.Size(149, 23);
+            this.transformationsButton.Size = new System.Drawing.Size(257, 74);
             this.transformationsButton.TabIndex = 0;
             this.transformationsButton.Text = "Преобразования";
             this.transformationsButton.UseVisualStyleBackColor = true;
@@ -45,12 +46,14 @@
             // 
             // gameButton
             // 
-            this.gameButton.Location = new System.Drawing.Point(464, 202);
+            this.gameButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.gameButton.Location = new System.Drawing.Point(412, 176);
             this.gameButton.Name = "gameButton";
-            this.gameButton.Size = new System.Drawing.Size(75, 23);
+            this.gameButton.Size = new System.Drawing.Size(257, 74);
             this.gameButton.TabIndex = 1;
             this.gameButton.Text = "Игра";
             this.gameButton.UseVisualStyleBackColor = true;
+            this.gameButton.Click += new System.EventHandler(this.gameButton_Click);
             // 
             // Menu
             // 
@@ -63,6 +66,7 @@
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Menu_Load);
             this.ResumeLayout(false);
+
         }
 
         private System.Windows.Forms.Button transformationsButton;

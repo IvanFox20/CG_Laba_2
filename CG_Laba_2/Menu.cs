@@ -27,5 +27,11 @@ namespace CG_Laba_2
             Transformations transformationsForm = new Transformations();
             transformationsForm.Show();
         }
+
+        private void gameButton_Click(object sender, EventArgs e)
+        {
+            Ping_Pong ping_Pong = new Ping_Pong();
+            ping_Pong.Show();
+        }
     }
 }

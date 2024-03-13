@@ -110,7 +110,7 @@ namespace CG_Laba_2
             List<List<float>> transformationMatrix = new List<List<float>>();
             transformationMatrix.Add(new List<float> { (float)Math.Cos(radianAngle), (float)Math.Sin(radianAngle) });
             transformationMatrix.Add(new List<float> { -(float)Math.Sin(radianAngle), (float)Math.Cos(radianAngle) });
-            for(int i = 0;i < _currentPoints.Count;i++)
+            for (int i = 0; i < _currentPoints.Count; i++)
             {
                 List<List<float>> pointMatrix = new List<List<float>>
                 {
